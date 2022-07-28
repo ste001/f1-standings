@@ -1,5 +1,6 @@
 <script>
   import DriverStandings from './lib/DriverStandings.svelte'
+import Footer from './lib/Footer.svelte';
 </script>
 
 <main>
@@ -8,13 +9,5 @@
     <DriverStandings />
   </div>
 
-  <p class="read-the-docs">
-    Click on the Vite and Svelte logos to learn more
-  </p>
+  <Footer />
 </main>
-
-<style>
-  .read-the-docs {
-    color: #888;
-  }
-</style>

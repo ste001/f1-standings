@@ -36,5 +36,8 @@
     align-items: baseline;
     gap: 10px;
   }
+  h1 {
+    color: white;
+  }
 </style>
   
