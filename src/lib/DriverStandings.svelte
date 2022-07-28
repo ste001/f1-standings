@@ -1,5 +1,6 @@
 <script>
   import { onMount } from 'svelte';
+  import Driver from './Driver.svelte';
 
   let standings = [];
 
@@ -13,10 +14,27 @@
 
 <div>
   <h1>Driver Standings</h1>
-  <ol>
+  <div class="driverGrid">
     {#each standings as driver}
-		  <li>{driver.Driver.givenName} {driver.Driver.familyName}</li>
+      <Driver
+        position={driver.position}
+        givenName={driver.Driver.givenName}
+        familyName={driver.Driver.familyName}
+        nationality={driver.Driver.nationality}
+        constructorName={driver.Constructors[0].name}
+        points={driver.points}
+      />
 	  {/each}
-  </ol>
+  </div>
 </div>
+
+<style>
+  .driverGrid {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 10px;
+  }
+</style>
   
