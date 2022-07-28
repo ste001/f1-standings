@@ -5,7 +5,7 @@
     let standings = [];
   
     onMount(async () => {
-      const res = await fetch(`http://ergast.com/api/f1/current/constructorStandings.json`);
+      const res = await fetch(`https://ergast.com/api/f1/current/constructorStandings.json`);
       const resJson = await res.json();
       console.log(resJson);
       standings = resJson.MRData.StandingsTable.StandingsLists[0].ConstructorStandings;
