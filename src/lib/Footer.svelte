@@ -2,6 +2,7 @@
   import svelteLogo from '../assets/svelte.svg'
   import viteLogo from '../assets/vite.svg'
   import githubLogo from '../assets/github-octocat.svg'
+  import netlifyLogo from '../assets/netlify.svg'
 </script>
 
 <div class="outerContainer">
@@ -15,8 +16,11 @@
     <a href="https://vitejs.dev" target="_blank"> 
       <img src={viteLogo} class="logo" alt="vite logo" />
     </a>
-    <a href="https://github.com/" target="_blank"> 
+    <a href="https://github.com" target="_blank"> 
       <img src={githubLogo} class="github-logo" alt="github octocat logo" />
+    </a>
+    <a href="https://www.netlify.com" target="_blank"> 
+      <img src={netlifyLogo} class="logo" alt="netlify logo" />
     </a>
   </div>
 </div>
