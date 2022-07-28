@@ -62,17 +62,17 @@
     width: 26px;
     left: 4px;
     bottom: 4px;
-    background-color: red;
+    background-color: black;
     -webkit-transition: .4s;
     transition: .4s;
   }
 
   input:checked + .slider {
-    background-color: #2196F3;
+    background-color: white;
   }
 
   input:focus + .slider {
-    box-shadow: 0 0 1px #2196F3;
+    box-shadow: 0 0 1px white;
   }
 
   input:checked + .slider:before {
