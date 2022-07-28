@@ -14,7 +14,7 @@
   
   <div>
     <h1>Constructor Standings</h1>
-    <div class="driverGrid">
+    <div class="grid">
       {#each standings as constructor}
         <Constructor
           position={constructor.position}
@@ -27,7 +27,7 @@
   </div>
   
   <style>
-    .driverGrid {
+    .grid {
       display: flex;
       flex-direction: column;
       justify-content: space-between;

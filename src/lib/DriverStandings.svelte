@@ -14,7 +14,7 @@
 
 <div>
   <h1>Driver Standings</h1>
-  <div class="driverGrid">
+  <div class="grid">
     {#each standings as driver}
       <Driver
         position={driver.position}
@@ -29,7 +29,7 @@
 </div>
 
 <style>
-  .driverGrid {
+  .grid {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
